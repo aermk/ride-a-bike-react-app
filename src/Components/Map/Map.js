@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 // import { Navbar, Container, Nav } from 'react-bootstrap';
-// import styles from './Blog.module.css'
+// import styles from './Map.module.css'
 
 
 
-export default class Blog extends Component {
+export default class Map extends Component {
   render() {
     return (
     <div>
-      Blog
+      Map
     </div>
     )
   }

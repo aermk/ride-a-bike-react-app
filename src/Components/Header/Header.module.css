@@ -1,0 +1,11 @@
+.header {
+  grid-area: h;
+  /* background-color: blueviolet; */
+  font-family: "Gochi Hand", cursive;
+  font-size: 90px;
+  text-align: center;
+  text-shadow: #fff 0 0 5px, #fff 0 0 10px, #fff 0 0 15px, #ffbf00 0 0 20px,
+    #ffbf00 0 0 30px, #ffbf00 0 0 40px, #ffbf00 0 0 50px,
+    2px 2px 2px rgba(206, 89, 55, 0);
+  color: #ffffff;
+}

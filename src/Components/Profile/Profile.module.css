@@ -1,0 +1,10 @@
+/* .profile {
+  grid-area: p;
+  grid-template-columns: repeat(5, 100%);
+  background-color: coral;
+} */
+
+.profile img {
+  text-align: center;
+  /* margin-top: 20px; */
+}

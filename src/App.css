@@ -1,4 +1,28 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
+
+.app-wrapper {
+  display: grid;
+  grid-template-rows:  0.15fr 0.1fr 0.1fr 0.7fr 0.1fr;
+  /* grid-template-columns: repeat(3, 100%); */
+  grid-gap: 10px;
+
+  grid-template-areas: 
+  'h'
+  'n'
+  'd'
+  'p'
+  'f';
+  text-align: center;
+  background-color: rgb(239, 222, 205);
+}
+
+.app-wrapper-content {
+  grid-area: p;
+  grid-template-columns: repeat(5, 100%);
+  background-color: coral;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +59,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

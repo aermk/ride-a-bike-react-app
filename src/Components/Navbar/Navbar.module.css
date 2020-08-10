@@ -1,4 +1,30 @@
-.nav_bar {
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
+.navBar {
   grid-area: n;
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
+}
+
+.button {
+  color: white;
+  text-align: center;
+  display: inline-block;
+  padding: 15px;
+  margin-left: 35px;
+  margin-right: 45px;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.button:hover {
+  text-shadow: 1px 1px 20px #ffbf00, 1px 1px 20px #000000, 1px 1px 20px #ffbf00;
+  color: #ffffff;
 }

@@ -1,10 +1,14 @@
+
 .description {
-  display: inline-grid;
-  grid-area: d;
-  /* grid-template-areas: 
-  'd d'; */
-  grid-template-columns: repeat(2, 50%);
-  background-color: crimson;
+  display: grid;
+  /* grid-area: d;
+  grid-template-areas: 
+  'd d';  */
+  /* grid-template-columns: repeat(2, 50%); */
+  grid-template-columns: 45% 55%;
+  /* background-color: crimson; */
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .description p {
@@ -12,8 +16,7 @@
   /* height: 200px; */
   text-align: center;
   /* margin-top: 70px; */
-  /* display: flex; */
-  align-items: center;
+  /* align-items: center; */
   font-family: "Indie Flower", cursive;
   color: #000000;
   font-size: 17px;
@@ -21,11 +24,9 @@
 
 .description .my_photo {
   background-image: url(https://sun9-20.userapi.com/c852036/v852036038/1c55b5/1Fzv8bJq-Sw.jpg);
-    background-position: center;
-    background-size: 200px;
-    border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
-    margin-left: 25rem;
-    /* margin-top: 3rem; */
+  background-size: 200px;
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  margin-left: 40rem;
 }

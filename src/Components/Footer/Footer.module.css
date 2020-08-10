@@ -1,5 +1,23 @@
 .footer {
   grid-area: f;
   text-align: center;
-  background-color: lavender;
+  /* background-color: lavender; */
+}
+
+.footer {
+  text-align: center;
+}
+
+
+.footerItem {
+  font-size: 40px;
+  color: #1d0404;
+  cursor: pointer;
+  text-shadow: 1px 1px 20px #ffbf00, 1px 1px 20px #ffbf00, 1px 1px 20px #ffbf00;
+  padding: 20px;
+}
+
+.footerItem:hover {
+  /*text-shadow: 1px 1px 20px #FFBF00, 1px 1px 20px #FFBF00, 1px 1px 20px #FFBF00;*/
+  filter: drop-shadow(1px 1px 20px #ffbf00);
 }

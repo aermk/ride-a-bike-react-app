@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import { Nav } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
 import styles from'./Navbar.module.css';
 
 
 export default class Navbar extends Component {
   render() {
     return (
-    <div className={styles.nav_bar}>
-      <button><Nav.Link href='/about'>About</Nav.Link></button>
-      <button><Nav.Link href='/map'>Map</Nav.Link></button>
-      <button><Nav.Link href='/blog'>Blog</Nav.Link></button>
+    <div className={styles.navBar}>
+      <NavLink className={styles.button} to='/about'>About</NavLink>
+      <NavLink className={styles.button} to='/map'>Map</NavLink>
+      <NavLink className={styles.button} to='/blog'>Blog</NavLink>
     </div>
     )
   }

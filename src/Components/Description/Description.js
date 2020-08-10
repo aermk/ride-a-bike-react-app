@@ -3,8 +3,7 @@ import React, { Component } from 'react';
 import styles from './Description.module.css';
 
 
-export default class Description extends Component {
-  render() {
+const Description = (props) => {
     return (
     <div className={styles.description}>
       <div>
@@ -17,5 +16,6 @@ export default class Description extends Component {
       </div>
     </div>
     )
-  }
 }
+
+export default Description;

@@ -1,4 +1,6 @@
 .header {
+  margin-top: 1rem;
+  /* margin-bottom: 1rem; */
   grid-area: h;
   /* background-color: blueviolet; */
   font-family: "Gochi Hand", cursive;

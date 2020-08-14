@@ -18,6 +18,7 @@ function App() {
         <Header />
         <Navbar />
         <div className='app-wrapper-content'>
+          <Route exact path='/' component={Profile}/>
           <Route exact path='/about' component={Profile}/>
           <Route exact path='/map' component={Map}/>
           <Route exact path='/blog' component={Blog}/>

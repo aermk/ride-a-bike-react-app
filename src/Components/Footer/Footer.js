@@ -5,9 +5,8 @@ import styles from './Footer.module.css'
 // import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 
-export default class Footer extends Component {
-  render() {
-    return (
+const Footer = () => {
+  return (
     <div className={styles.footer}>
       <div className={styles.footerItem}>
         <a href="https://www.instagram.com/sweetbunsasha/" target="_blank">
@@ -26,6 +25,7 @@ export default class Footer extends Component {
         </a>
       </div>
     </div>
-    )
-  }
+  )
 }
+
+export default Footer;

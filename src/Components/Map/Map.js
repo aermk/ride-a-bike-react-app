@@ -4,12 +4,12 @@ import React, { Component } from 'react';
 
 
 
-export default class Map extends Component {
-  render() {
-    return (
+const Map = () => {
+  return (
     <div>
       Map
     </div>
-    )
-  }
+   )
 }
+
+export default Map;

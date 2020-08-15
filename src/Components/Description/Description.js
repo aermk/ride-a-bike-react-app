@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 // import { Navbar, Container, Nav } from 'react-bootstrap';
 import styles from './Description.module.css';
 
@@ -12,7 +12,7 @@ const Description = (props) => {
       <div>
         <p>
           Hello! My name is Sasha! I love sweets, learn new things, travel and take pictures. I collect photos of parked bicycles all over the world, and here you can see a small part of them. You can see photos from my travels in my instagram :)
-      </p>
+        </p>
       </div>
     </div>
     )

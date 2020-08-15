@@ -5,28 +5,29 @@ import Header from './Components/Header/Header';
 import Navbar from './Components/Navbar/Navbar';
 import Profile from './Components/Profile/Profile';
 import Footer from './Components/Footer/Footer';
-import Blog from './Components/Posts/Posts';
+import Blog from './Components/Blog/Blog';
 import Map from './Components/Map/Map';
-import { BrowserRouter, Route } from 'react-router-dom';
+// import { BrowserRouter, Route } from 'react-router-dom';
+import { HashRouter, Route } from 'react-router-dom';
+
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+const  App = (props) => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className='app-wrapper'>
         <Header />
         <Navbar />
         <div className='app-wrapper-content'>
-          <Route exact path='/' component={Profile}/>
-          <Route exact path='/about' component={Profile}/>
+          <Route exact path='/' render={() => <Profile state={props.state.profilePage}/>}/>
+          <Route exact path='/about' render={() => <Profile state={props.state.profilePage}/>}/>
           <Route exact path='/map' component={Map}/>
-          <Route exact path='/blog' component={Blog}/>
+          <Route exact path='/blog' render={() => <Blog state={props.state.blogPage}/>}/>
         </div>
         <Footer />
       </div>
-    </BrowserRouter>
-    
+    </HashRouter>
   );
 }
 

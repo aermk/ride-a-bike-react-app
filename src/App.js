@@ -23,7 +23,7 @@ const  App = (props) => {
           <Route exact path='/' render={() => <Profile state={props.state.profilePage}/>}/>
           <Route exact path='/about' render={() => <Profile state={props.state.profilePage}/>}/>
           <Route exact path='/map' component={Map}/>
-          <Route exact path='/blog' render={() => <Blog state={props.state.blogPage}/>}/>
+          <Route exact path='/blog' render={() => <Blog state={props.state.blogPage} addPost={props.addPost} />}/>
         </div>
         <Footer />
       </div>

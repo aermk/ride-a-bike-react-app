@@ -1,3 +1,5 @@
+import { rerenderEntiereTree } from './render'
+
 let state = {
   blogPage: {
     posts: [
@@ -17,3 +19,15 @@ let state = {
 }
 
 export default state;
+// console.log(state, 'state')
+
+export const addPost = (postMessage) => {
+  debugger;
+  let newPost = {
+    id: 3,
+    message: postMessage,
+    likescounter: 0
+  };
+  state.blogPage.posts.push(newPost);
+  rerenderEntiereTree(state);
+}

@@ -5,7 +5,8 @@ let state = {
     posts: [
       {id: 1, message: 'I study react js', likescounter: '15'},
       {id: 2, message: 'Chik puk ;(', likescounter: '1'},
-    ]
+    ],
+    newPostText: 'Lalala'
   },
   profilePage: {
     photos: [
@@ -21,13 +22,19 @@ let state = {
 export default state;
 // console.log(state, 'state')
 
-export const addPost = (postMessage) => {
-  debugger;
+export const addPost = () => {
   let newPost = {
     id: 3,
-    message: postMessage,
+    message: state.blogPage.newPostText,
     likescounter: 0
   };
   state.blogPage.posts.push(newPost);
+  rerenderEntiereTree(state);
+  state.blogPage.newPostText = '';
+}
+
+export const updateNewPostText = (newText) => {
+
+  state.blogPage.newPostText = newText;
   rerenderEntiereTree(state);
 }

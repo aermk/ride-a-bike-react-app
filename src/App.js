@@ -20,10 +20,10 @@ const  App = (props) => {
         <Header />
         <Navbar />
         <div className='app-wrapper-content'>
-          <Route exact path='/' render={() => <Profile state={props.state.profilePage}/>}/>
-          <Route exact path='/about' render={() => <Profile state={props.state.profilePage}/>}/>
+          <Route exact path='/' render={() => <Profile profilePage={props.state.profilePage}/>}/>
+          <Route exact path='/about' render={() => <Profile profilePage={props.state.profilePage}/>}/>
           <Route exact path='/map' component={Map}/>
-          <Route exact path='/blog' render={() => <Blog state={props.state.blogPage} addPost={props.addPost} />}/>
+          <Route exact path='/blog' render={() => <Blog blogPage={props.state.blogPage} addPost={props.addPost} newPostText={props.state.blogPage.newPostText} updateNewPostText={props.updateNewPostText}/>}/>
         </div>
         <Footer />
       </div>

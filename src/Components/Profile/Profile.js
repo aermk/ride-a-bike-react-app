@@ -4,7 +4,7 @@ import Description from '../Description/Description';
 
 const Profile = (props) => {
 
-  let photoElements = props.state.photos.map((ph) => <img className={styles.bike} id={ph.id} src={ph.img} alt="" />)
+  let photoElements = props.profilePage.photos.map((ph) => <img className={styles.bike} id={ph.id} src={ph.img} alt="" />)
 
   return (
     <div>

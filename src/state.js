@@ -1,4 +1,6 @@
-import { rerenderEntiereTree } from './render'
+let rerenderEntiereTree = () => {
+  console.log('State changed!');
+}
 
 let state = {
   blogPage: {
@@ -19,10 +21,8 @@ let state = {
   }
 }
 
-export default state;
-// console.log(state, 'state')
-
 export const addPost = () => {
+  debugger;
   let newPost = {
     id: 3,
     message: state.blogPage.newPostText,
@@ -34,7 +34,12 @@ export const addPost = () => {
 }
 
 export const updateNewPostText = (newText) => {
-
   state.blogPage.newPostText = newText;
   rerenderEntiereTree(state);
 }
+
+export const subscribe = (observer) => {
+  rerenderEntiereTree = observer;
+}
+
+export default state;

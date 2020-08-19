@@ -7,11 +7,7 @@ import Profile from './Components/Profile/Profile';
 import Footer from './Components/Footer/Footer';
 import Blog from './Components/Blog/Blog';
 import Map from './Components/Map/Map';
-// import { BrowserRouter, Route } from 'react-router-dom';
 import { HashRouter, Route } from 'react-router-dom';
-
-
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const  App = (props) => {
   return (

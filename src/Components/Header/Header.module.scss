@@ -1,8 +1,8 @@
+@import '../mixins.scss';
+
 .header {
-  margin-top: 1rem;
-  /* margin-bottom: 1rem; */
-  grid-area: h;
-  /* background-color: blueviolet; */
+  @include Test;
+  margin-top: 20px;
   font-family: "Gochi Hand", cursive;
   font-size: 90px;
   text-align: center;

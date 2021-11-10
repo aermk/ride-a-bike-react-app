@@ -4,17 +4,13 @@
 
 .navBar {
   @include Test;
-
-  /* background-color: cadetblue; */
+  margin-top: 20px;
 }
 
 .button {
   color: white;
   text-align: center;
-  display: inline-block;
   padding: 15px;
-  margin-left: 35px;
-  margin-right: 45px;
   text-decoration: none;
   font-family: "Quicksand", sans-serif;
   font-size: 20px;
@@ -24,9 +20,12 @@
   cursor: pointer;
   overflow: hidden;
   outline: none;
-}
-
-.button:hover {
-  text-shadow: 1px 1px 20px #ffbf00, 1px 1px 20px #000000, 1px 1px 20px #ffbf00;
-  color: #ffffff;
+  margin: 0 35px 0 35px;
+  &:hover {
+    text-shadow: 1px 1px 20px #ffbf00, 1px 1px 20px #000000, 1px 1px 20px #ffbf00;
+    color: #ffffff;
+  }
+  @media (max-width: 611px) {
+    margin: 0 10px 0 10px;
+  }
 }

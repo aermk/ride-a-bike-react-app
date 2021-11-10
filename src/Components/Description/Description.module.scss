@@ -1,0 +1,26 @@
+@import '../mixins.scss';
+
+.description {
+  @include Test;
+  p {
+    @include Test;
+    width: 400px;
+    font-family: "Indie Flower", cursive;
+    color: #000000;
+    font-size: 17px;
+    text-align: center;
+
+  }
+  .my_photo {
+    @include Test;
+    background-image: url(https://sun9-20.userapi.com/c852036/v852036038/1c55b5/1Fzv8bJq-Sw.jpg);
+    background-size: 200px;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    @media (max-width: 611px) {
+      display: none;
+      
+    }
+  }
+}

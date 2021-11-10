@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import '../src/Components/mixins.scss';
+
 
 
 body {
@@ -12,4 +14,7 @@ body {
 }
 
 .app-wrapper-content {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
 }

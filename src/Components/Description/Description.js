@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Navbar, Container, Nav } from 'react-bootstrap';
-import styles from './Description.module.css';
+import styles from './Description.module.scss';
 
 
 const Description = (props) => {

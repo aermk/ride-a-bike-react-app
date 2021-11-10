@@ -1,0 +1,17 @@
+@import '../mixins.scss';
+
+.footer {
+ @include Test;
+ .footerItem {
+  font-size: 40px;
+  color: #1d0404;
+  cursor: pointer;
+  text-shadow: 1px 1px 20px #ffbf00, 1px 1px 20px #ffbf00, 1px 1px 20px #ffbf00;
+  padding: 20px;
+  &:hover {
+    /*text-shadow: 1px 1px 20px #FFBF00, 1px 1px 20px #FFBF00, 1px 1px 20px #FFBF00;*/
+    filter: drop-shadow(1px 1px 20px #ffbf00);
+  }
+}
+
+}
